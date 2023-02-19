@@ -1595,12 +1595,29 @@ FW_VERSIONS = {
     ],
   },
   CAR.SANTA_CRUZ_1ST_GEN: {
+    (Ecu.transmission, 0x7E1, None):	[
+	    b'\xf1\x00T02601BL  T02900A1  WNX4T25X4X900NS7S\r\xa2\xa6',
+    	b'\xf1\x87954A02N460\x00\x00\x00\x00\x00\xf1\x81T02900A1  \xf1\x00T02601BL  T02900A1  WNX4T25X4X900NS7S'
+    	b'\r\xa2\xa6',
+	    b'\x11"',
+	    b'WNX4T25X4X900NS7',
+	    b'\xf1\x87954A02N460\x00\x00\x00\x00\x00\xf1\x82WNX4T25X4X900NS7',
+	  ],
+	(Ecu.eps, 0x7D4, None):
+	    b'\xf1\x00NX4 MDPS C 1.00 1.00 56300-K5000 1430',
+	  ],
+	(Ecu.engine, 0x7E0, None):
+	    b'\xf1\x870\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\xf1\x81HM6M1_0a0_K60',
+	    b'NXDWD5TKGXXXXK6B',
+	    b'\xf1\x870\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\xf1\x82NXDWD5TKGXXXXK6B',
+	(Ecu.cornerRadar, 0x7B7, None):
+	    b'\xf1\x003D',
     (Ecu.fwdCamera, 0x7c4, None): [
       b'\xf1\x00NX4 FR_CMR AT USA LHD 1.00 1.00 99211-CW000 14M',
-    ],
+      ],
     (Ecu.fwdRadar, 0x7d0, None): [
       b'\xf1\x00NX4__               1.00 1.00 99110-K5000         ',
-    ],
+      ],
   },
   CAR.KIA_SPORTAGE_5TH_GEN: {
     (Ecu.fwdCamera, 0x7c4, None): [
